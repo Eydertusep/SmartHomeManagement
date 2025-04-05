@@ -21,7 +21,7 @@ public class Main {
         System.out.println("T3007ES temperature set to " + nest.getTemperature() + "°C");
         nest.increaseTemperature();
         System.out.println("T3007ES temperature set to " + nest.getTemperature() + "°C");
-
+        nest.isEnergySavingMode();
 
 
 

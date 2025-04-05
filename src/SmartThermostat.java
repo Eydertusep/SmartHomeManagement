@@ -32,6 +32,8 @@ public class SmartThermostat extends SmartDevice {
     public void isEnergySavingMode(){
         if (temperature>10 && temperature <20){
             System.out.println("El termostato se encuentra en modo ahorro de energía");
+        } else {
+            System.out.println(" modo ahorro de energia esta apagado ");
         }
     }
 
