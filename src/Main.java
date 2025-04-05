@@ -9,10 +9,24 @@ public class Main {
 
         hue.deviceInfo();
         hue.setAdjustBrightness(75);
-        hue.getJustBrightness();
+        System.out.println(" Brightness:" + hue.getJustBrightness());
 
         nest.deviceInfo();
-        nest.
+        System.out.println(nest.getTemperature() + "°C");
+        hue.changeColor("Blue");
+        System.out.println("Hue color changed to: " + hue.getColor());
+        hue.setAdjustBrightness(50);
+        System.out.println("Hue brightness set to: " + hue.getJustBrightness());
+        nest.setTemperature(25);
+        System.out.println("T3007ES temperature set to " + nest.getTemperature() + "°C");
+        nest.increaseTemperature();
+        System.out.println("T3007ES temperature set to " + nest.getTemperature() + "°C");
+
+
+
+
+
+
 
 
 

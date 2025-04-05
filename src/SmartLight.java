@@ -13,6 +13,9 @@ public class SmartLight extends SmartDevice {
     public void changeColor(String newColor) {
         this.color = newColor;
     }
+    public String getColor(){
+        return color;
+    }
 
     public void setAdjustBrightness(int level) {
         if (level >= 0 && level < 101) {
@@ -26,8 +29,8 @@ public class SmartLight extends SmartDevice {
         }
     }
 
-    public void getJustBrightness() {
-        System.out.println(" Brightness: " + brightness);
+    public int getJustBrightness() {
+        return brightness;
     }
 
     public void deviceInfo () {
